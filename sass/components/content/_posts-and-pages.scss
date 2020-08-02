@@ -1,0 +1,210 @@
+/*--------------------------------------------------------------
+# Underscores css
+--------------------------------------------------------------*/
+
+.sticky {
+  display: block;
+}
+
+.post,
+.page {
+  margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Start my custom CSS
+--------------------------------------------------------------*/
+
+.main-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.content-container {
+  padding-top: 2.6em;
+}
+
+@media only screen and (min-width: 600px) {
+  .content-container {
+    padding-top: 2.8em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .noscroll {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+/*--------------------------------------------------------------
+	# Top image
+	--------------------------------------------------------------*/
+
+.featured-image-background {
+  position: relative;
+}
+
+.featured-image-container {
+  padding: 1.75em 1.5em 0;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .featured-image-container {
+    padding: 2em 2em 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .featured-image-container {
+    padding: 2.5em 0 0;
+  }
+}
+
+/*--------------------------------------------------------------
+	# Description
+	--------------------------------------------------------------*/
+
+.portfolio-info-container {
+  padding: 2em 2em 0;
+  background: white;
+}
+
+.featured-image-container .gatsby-image-wrapper {
+  border-radius: 4px 4px 0 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .portfolio-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    padding: 1.5em 1.5em 0;
+    margin: 0 auto;
+  }
+
+  .title-and-info {
+    width: calc(100% / 3 * 2);
+    padding: 1em 2em;
+  }
+
+  .portfolio-title-container {
+    width: 100%;
+    padding: 0.75em 2em 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .featured-image-container .gatsby-image-wrapper {
+    border-radius: 0.65em 0.65em 0 0;
+  }
+}
+
+.portfolio-title {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.portfolio-desc {
+  font-size: 0.9em;
+  line-height: 2em;
+}
+
+/*--------------------------------------------------------------
+	# Meta
+	--------------------------------------------------------------*/
+
+.meta-container {
+  padding: 1em 0 0;
+}
+
+.meta-list {
+  list-style: none;
+  margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .meta-container {
+    width: calc(100% / 3 * 1);
+    padding: 1em 0 0;
+  }
+
+  .meta-list {
+    padding: 0 1em;
+  }
+}
+
+.meta-list li {
+  font-size: 0.9em;
+  color: #848484;
+  padding: 0 0 0.6em 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.meta-list li svg {
+  padding-top: 2px;
+}
+
+.skill-name {
+  margin-left: 8px;
+  padding-bottom: 2px;
+}
+
+/*--------------------------------------------------------------
+	# Markdown
+	--------------------------------------------------------------*/
+
+.markdown {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0.75em 2em;
+}
+
+.markdown-content p {
+  font-size: 0.8em;
+  color: gray;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+	# Footer
+	--------------------------------------------------------------*/
+
+footer {
+  /*border-top: 1px solid #eee;*/
+  padding: 1em 0 1em;
+  background: white;
+}
+
+footer p {
+  font-size: 0.8em;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.footer-source {
+  margin-left: 1.5em;
+}

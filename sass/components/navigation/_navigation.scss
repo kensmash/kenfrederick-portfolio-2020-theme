@@ -1,0 +1,108 @@
+.nav-container {
+  transition: all ease-out 300ms; // animate the  menu hide-show
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 150px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  margin-top: 42px;
+  background: rgb(255, 255, 255);
+  /* https://stackoverflow.com/questions/17572619/inset-box-shadow-only-on-one-side */
+  box-shadow: -2px 6px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translate3d(100%, 0px, 0px);
+}
+
+.toggled {
+  transform: translate3d(0%, 0px, 0px);
+}
+
+.nav-section {
+  padding-left: 1.5em;
+}
+
+@media only screen and (min-width: 600px) {
+  .nav-container {
+    margin-top: 41px;
+    width: 270px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .nav-container {
+    margin-top: 40px;
+    width: 320px;
+  }
+}
+
+.nav-title {
+  margin-bottom: 0;
+  padding: 0.75em 0 0.75em;
+  color: hsla(0, 0%, 0%, 0.8);
+  font-size: 0.9em;
+}
+
+.nav-container ul {
+  list-style-type: none;
+  margin: 0 0 0.3em 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  transition: all 0.2s ease-in-out;
+  width: 90px;
+  height: 90px;
+  margin: 0 0.4rem 0.75rem 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .thumbnail {
+    margin: 0 0.4rem 0.75rem 0.4rem;
+  }
+}
+
+.thumbnail img {
+  border-radius: 0.2em;
+}
+
+.thumbnail:hover,
+.thumbnail:focus,
+.thumbnail:active {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+  # Got Grid?
+  --------------------------------------------------------------*/
+@supports (grid-area: auto) {
+  @media only screen and (min-width: 600px) {
+    .nav-container ul {
+      display: grid;
+      grid-template-columns: 100px 100px;
+      grid-gap: 16px;
+    }
+
+    .thumbnail {
+      width: 100px;
+      height: 100px;
+      margin: 0;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    .nav-container ul {
+      display: grid;
+      grid-template-columns: 100px 100px;
+      grid-gap: 16px;
+    }
+
+    .thumbnail {
+      width: 100px;
+      height: 100px;
+      margin: 0;
+    }
+  }
+}
