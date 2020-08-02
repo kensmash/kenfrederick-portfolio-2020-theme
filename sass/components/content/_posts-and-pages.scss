@@ -81,17 +81,16 @@
   }
 }
 
-/*--------------------------------------------------------------
-	# Description
-	--------------------------------------------------------------*/
+/* pin images to bottom of div */
+.featured-image-container .post-thumbnail {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 4px 4px 0 0;
+}
 
 .portfolio-info-container {
   padding: 2em 2em 0;
   background: white;
-}
-
-.featured-image-container .gatsby-image-wrapper {
-  border-radius: 4px 4px 0 0;
 }
 
 @media only screen and (min-width: 600px) {
@@ -116,7 +115,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .featured-image-container .gatsby-image-wrapper {
+  .featured-image-container .post-thumbnail {
     border-radius: 0.65em 0.65em 0 0;
   }
 }
