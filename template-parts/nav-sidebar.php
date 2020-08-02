@@ -9,17 +9,8 @@
 
 ?>
 
-
-
-
 <?php
-/**
- *
- * The loop that displays nav thumbnails
- *
- */
 
-// args
 $args = array(
 	'posts_per_page' => -1,
 	'post_type' => 'projects',
@@ -31,8 +22,10 @@ $the_query = new WP_Query( $args );
  
 // The Loop
 ?>
+
 <nav id="site-navigation" class="nav-container">
     <?php if( $the_query->have_posts() ): ?>
+
     <div class="nav-section">
         <p class="nav-title">Web/Apps</p>
         <ul class="row">
@@ -51,6 +44,7 @@ $the_query = new WP_Query( $args );
     <div class="nav-section">
         <p><?php _e( 'Sorry, no projects to display.' ); ?></p>
     </div>
+
     <?php endif; ?>
 </nav>
 
