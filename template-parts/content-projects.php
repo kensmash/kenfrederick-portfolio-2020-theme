@@ -17,7 +17,7 @@
 		</div>
 	</div>
 
-	<div class=" portfolio-info-container">
+	<div class="portfolio-info-container">
 		<div class="portfolio-title-container">
 			<?php the_title( '<h1 class="portfolio-title">', '</h1>' ); ?>
 		</div>
@@ -44,14 +44,10 @@
 			</ul>
 			<?php endif; ?>
 		</div>
-
-
-
 	</div>
 
 	<div>
 		<?php the_content()?>
 	</div>
-
 
 </article>
