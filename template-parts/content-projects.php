@@ -25,11 +25,28 @@
 		<div class="title-and-info">
 			<p class="portfolio-desc"><?php echo get_the_excerpt()?></p>
 		</div>
-		<div class="meta-container">
-			<ul class="meta-list">
 
+		<div class="meta-container">
+			<?php if( have_rows('skills') ): ?>
+			<ul class="meta-list">
+				<?php while( have_rows('skills') ): the_row();  ?>
+				<li>
+					<?php the_sub_field('icon'); ?>
+					<span class="skill-name">
+						<?php if( get_sub_field('url') ): ?>
+						<a href="<?php the_sub_field('url'); ?>" target="_blank" rel="noopener noreferrer"><?php the_sub_field('name'); ?></a>
+						<?php else:
+						the_sub_field('name'); 
+						endif; ?>
+					</span>
+				</li>
+				<?php endwhile; ?>
 			</ul>
+			<?php endif; ?>
 		</div>
+
+
+
 	</div>
 
 	<div>
