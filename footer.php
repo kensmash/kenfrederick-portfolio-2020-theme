@@ -15,10 +15,7 @@
 	<p>
 		Built with WordPress
 		<span class="footer-source">
-			Theme on{" "}
-			<a href="https://github.com/kensmash/portfolio" target="_blank" rel="noopener noreferrer">
-				GitHub
-			</a>
+			Theme on <a href="https://github.com/kensmash/portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
 		</span>
 		<span class="footer-source">
 			<a href="mailto:ken@kenfrederick.com">ken@kenfrederick.com</a>
