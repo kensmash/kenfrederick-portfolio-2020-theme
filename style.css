@@ -1288,16 +1288,15 @@ textarea {
   max-width: 1000px;
 }
 
-.portrait-container {
-  width: 50px;
-  margin-right: 0.75rem;
+.title-desc-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.title {
-  /*color: hsla(0, 0%, 0%, 0.8);*/
+.title-desc-container p {
+  margin: 0;
   color: white;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .title-desc {
@@ -1307,19 +1306,32 @@ textarea {
 @media only screen and (min-width: 375px) {
   .title-desc {
     display: inherit;
-    color: rgba(0, 0, 0, 0.8);
     color: white;
-    margin: 0;
     padding-left: 1em;
     font-size: 0.8em;
   }
 }
-.title-menu {
-  color: rgba(0, 0, 0, 0.8);
-  color: white;
-  font-size: 0.8em;
-  margin: 0;
-  padding-left: 1em;
+/*--------------------------------------------------------------
+  # Menu button styling
+  --------------------------------------------------------------*/
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 100;
+  background: transparent;
+  border: 0;
+  transition: all ease-out 400ms;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  text-decoration: underline;
+}
+
+.menu-toggle-text {
+  color: #fff;
+  padding: vr(0.15) vr(0.25) 0 0;
 }
 
 /*--------------------------------------------------------------

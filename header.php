@@ -29,12 +29,14 @@
 		<header id="masthead" class="me">
 			<div class="me-content">
 
-				<p class="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<p class="title-desc"><?php echo get_bloginfo( 'description', 'display' ); ?></p>
+				<div class="title-desc-container">
+					<p class="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<p class="title-desc"><?php echo get_bloginfo( 'description', 'display' ); ?></p>
+				</div>
 
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 					<span class="menu-toggle-text">Work</span>
-					<div id="hamburger-menu">
+					<div class="hamburger-menu">
 						<span></span>
 						<span></span>
 						<span></span>

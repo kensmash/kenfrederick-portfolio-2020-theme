@@ -7,6 +7,7 @@
 (function () {
   const siteHeader = document.getElementsByClassName("me-content")[0];
   const siteNavigation = document.getElementById("site-navigation");
+  const siteHamburger = document.getElementsByClassName("hamburger-menu")[0];
 
   // Return early if the navigation don't exist.
   if (!siteHeader || !siteNavigation) {
@@ -35,6 +36,7 @@
   // Toggle the .toggled class and the aria-expanded value each time the button is clicked.
   button.addEventListener("click", function () {
     siteNavigation.classList.toggle("toggled");
+    siteHamburger.classList.toggle("open");
 
     if (button.getAttribute("aria-expanded") === "true") {
       button.setAttribute("aria-expanded", "false");
@@ -46,11 +48,11 @@
   // Remove the .toggled class and set aria-expanded to false when the user clicks outside the navigation.
   document.addEventListener("click", function (event) {
     const isClickInside =
-      siteHeader.contains(event.target) ||
-      siteNavigation.contains(event.target);
+      button.contains(event.target) || siteNavigation.contains(event.target);
 
-    if (!isClickInside && button.getAttribute("aria-expanded") === "true") {
+    if (!isClickInside) {
       siteNavigation.classList.remove("toggled");
+      siteHamburger.classList.remove("open");
       button.setAttribute("aria-expanded", "false");
     }
   });
