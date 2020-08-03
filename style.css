@@ -1650,33 +1650,6 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-# Underscores css
---------------------------------------------------------------*/
-.sticky {
-  display: block;
-}
-
-.post,
-.page {
-  margin: 0 0 1.5em;
-}
-
-.updated:not(.published) {
-  display: none;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0;
-}
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em;
-}
-
-/*--------------------------------------------------------------
 # Start my custom CSS
 --------------------------------------------------------------*/
 .content-container {
@@ -1722,6 +1695,9 @@ textarea {
 .featured-image-container .post-thumbnail {
   display: flex;
   align-items: flex-end;
+}
+
+.featured-image-container .post-thumbnail img {
   border-radius: 4px 4px 0 0;
 }
 
@@ -1731,7 +1707,8 @@ textarea {
 }
 
 @media only screen and (min-width: 600px) {
-  .portfolio-info-container {
+  .portfolio-info-container,
+.post-navigation {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -1751,7 +1728,7 @@ textarea {
   }
 }
 @media only screen and (min-width: 768px) {
-  .featured-image-container .post-thumbnail {
+  .featured-image-container .post-thumbnail img {
     border-radius: 0.65em 0.65em 0 0;
   }
 }
@@ -1833,6 +1810,33 @@ footer p {
 
 .footer-source {
   margin-left: 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Underscores css
+--------------------------------------------------------------*/
+.sticky {
+  display: block;
+}
+
+.post,
+.page {
+  margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
 }
 
 /* Comments

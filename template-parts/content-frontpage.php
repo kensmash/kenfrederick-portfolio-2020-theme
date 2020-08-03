@@ -39,8 +39,10 @@
                     <li class="home-thumbnail-container">
                         <div class="home-thumbnail">
                             <?php if( get_field('homepage_thumbnail') ): ?>
+
                             <a href="<?php the_permalink(); ?>"><img src="<?php the_field('homepage_thumbnail'); ?>" /></a>
                             <?php endif; ?>
+
                         </div>
                     </li>
                     <?php endwhile; ?>
