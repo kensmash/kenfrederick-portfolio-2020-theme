@@ -94,7 +94,8 @@
   font-size: 1.5em;
 }
 
-.portfolio-desc {
+.portfolio-desc,
+.nav-links {
   font-size: 0.9em;
   line-height: 2em;
 }
@@ -136,17 +137,10 @@
 }
 
 /*--------------------------------------------------------------
-	# Markdown
+	# Content
 	--------------------------------------------------------------*/
 
-.markdown {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1000px;
-  padding: 0.75em 2em;
-}
-
-.markdown-content p {
+.caption {
   font-size: 0.8em;
   color: gray;
   text-align: center;
