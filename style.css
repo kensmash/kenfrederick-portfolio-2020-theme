@@ -658,6 +658,7 @@ textarea {
 .title a {
   color: white;
   text-decoration: none;
+  margin-left: 0.75em;
 }
 
 .title-desc {
@@ -668,8 +669,19 @@ textarea {
   .title-desc {
     display: inherit;
     color: white;
-    padding-left: 1.5em !important;
-    padding-top: 0.3em !important;
+    padding-left: 0.75em;
+    padding-top: 0.2em;
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .title a {
+    margin-left: 0;
+  }
+
+  .title-desc {
+    padding-left: 1.5em;
+    padding-top: 0.3em;
     font-size: 0.8em;
   }
 }
@@ -934,16 +946,8 @@ textarea {
   color: #f8f8f8;
 }
 
-.hello {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hello .gatsby-image-wrapper {
-  width: 85px;
-  height: 85px;
-  border-radius: 50%;
+ul {
+  padding-inline-start: 0;
 }
 
 /*--------------------------------------------------------------
