@@ -18,11 +18,10 @@
 	</div>
 
 	<div class="portfolio-info-container">
-		<div class="portfolio-title-container">
-			<?php the_title( '<h1 class="portfolio-title">', '</h1>' ); ?>
-		</div>
+
 
 		<div class="title-and-info">
+			<?php the_title( '<h1 class="portfolio-title">', '</h1>' ); ?>
 			<p class="portfolio-desc"><?php echo get_the_excerpt()?></p>
 		</div>
 
@@ -46,8 +45,10 @@
 		</div>
 	</div>
 
-	<div>
-		<?php the_content()?>
+
+	<div class="gutenberg-content-container">
+		<?php the_content();?>
 	</div>
+
 
 </article>
