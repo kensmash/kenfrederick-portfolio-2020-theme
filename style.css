@@ -102,6 +102,10 @@ hr {
   overflow: visible;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -946,10 +950,6 @@ textarea {
   color: #f8f8f8;
 }
 
-ul {
-  padding-inline-start: 0;
-}
-
 /*--------------------------------------------------------------
   # Nav Thumbnails
   --------------------------------------------------------------*/
@@ -1066,6 +1066,34 @@ ul {
   background: white;
 }
 
+.portfolio-title {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.nav-links,
+figcaption,
+.title-and-info p,
+.gutenberg-content-container p {
+  font-size: 0.9em;
+  line-height: 2em;
+}
+
+.nav-row {
+  padding-top: 1.75em;
+}
+
+figcaption {
+  color: #848484;
+}
+
+.gutenberg-content-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 1.5em 1.5em 0;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 600px) {
   .portfolio-info-container,
 .post-navigation {
@@ -1079,33 +1107,19 @@ ul {
 
   .title-and-info {
     width: calc(100% / 3 * 2);
-    padding: 0 2em 0 0;
-  }
-
-  .gutenberg-content-container {
-    width: 100%;
-    max-width: 1000px;
-    padding: 1.5em 1.5em 0;
-    margin: 0 auto;
+    padding: 0 2.5em 0 0;
   }
 }
 @media only screen and (min-width: 768px) {
   .featured-image-container .post-thumbnail img {
-    border-radius: 0.65em 0.65em 0 0;
+    border-radius: 0.75em 0.75em 0 0;
+    margin-bottom: -1.25em;
+  }
+
+  .portfolio-title {
+    margin-top: 1.75em;
   }
 }
-.portfolio-title {
-  font-weight: normal;
-  font-size: 1.5em;
-}
-
-.portfolio-desc,
-.nav-links,
-.gutenberg-content-container p {
-  font-size: 0.9em;
-  line-height: 2em;
-}
-
 /*--------------------------------------------------------------
 	# Meta
 	--------------------------------------------------------------*/
@@ -1125,7 +1139,7 @@ ul {
   }
 
   .meta-list {
-    padding: 0 1em;
+    padding: 1.25em 1em 0 0;
   }
 }
 .meta-list li {
@@ -1153,9 +1167,7 @@ ul {
 	# Footer
 	--------------------------------------------------------------*/
 footer {
-  /*border-top: 1px solid #eee;*/
-  padding: 1em 0 1em;
-  background: white;
+  padding: 1em 0.25em;
 }
 
 footer p {
@@ -1169,6 +1181,22 @@ footer p {
   margin-left: 1.5em;
 }
 
+.nav-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 1.5em;
+}
+
+@media only screen and (min-width: 600px) {
+  footer {
+    padding: 1em 1.75em;
+  }
+
+  .nav-links {
+    padding: 0;
+  }
+}
 /*--------------------------------------------------------------
 # Underscores css
 --------------------------------------------------------------*/

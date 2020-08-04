@@ -22,7 +22,7 @@
 
 		<div class="title-and-info">
 			<?php the_title( '<h1 class="portfolio-title">', '</h1>' ); ?>
-			<p class="portfolio-desc"><?php echo get_the_excerpt()?></p>
+			<?php the_field('description');?>
 		</div>
 
 		<div class="meta-container">
