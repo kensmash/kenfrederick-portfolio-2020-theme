@@ -57,7 +57,7 @@
 }
 
 .portfolio-info-container {
-  padding: 2em 2em 0;
+  padding: 1em 2em 0;
   background: white;
 }
 
@@ -66,7 +66,6 @@
   font-size: 1.5em;
 }
 
-.nav-links,
 figcaption,
 .title-and-info p,
 .gutenberg-content-container p {
@@ -187,6 +186,7 @@ footer p {
   width: 100%;
   justify-content: space-between;
   padding: 0 1.5em;
+  font-size: 0.9em;
 }
 
 @media only screen and (min-width: 600px) {

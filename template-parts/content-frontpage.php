@@ -33,7 +33,7 @@
         <div class="home-content-container">
             <?php if( $query->have_posts() ): ?>
 
-            <div class="nav-section">
+            <div>
                 <ul>
                     <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                     <li class="home-thumbnail-container">
