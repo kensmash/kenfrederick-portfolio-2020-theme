@@ -34,15 +34,18 @@
 					<p class="title-desc"><?php echo get_bloginfo( 'description', 'display' ); ?></p>
 				</div>
 
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-					<span class="menu-toggle-text">Work</span>
-					<div class="hamburger-menu">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</button>
+				<div class="blog-menu-container">
+					<a href="<?php echo get_permalink( get_page_by_path( 'blog' ) )?>" class="mainnav-blog">Blog</a>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+						<span class="menu-toggle-text">Work</span>
+						<div class="hamburger-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</button>
+				</div>
 
 
 			</div>

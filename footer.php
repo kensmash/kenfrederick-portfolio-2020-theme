@@ -13,7 +13,7 @@
 
 <footer id="colophon" class="site-footer">
 	<p>
-		Built with WordPress
+		Built with <a href="https://wordpress.org" target="_blank" rel="noopener noreferrer">WordPress</a>
 		<span class="footer-source">
 			Theme on <a href="https://github.com/kensmash/kenfrederick-portfolio-2020-theme" target="_blank" rel="noopener noreferrer">GitHub</a>
 		</span>

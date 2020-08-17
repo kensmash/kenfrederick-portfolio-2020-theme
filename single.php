@@ -20,15 +20,18 @@ get_header();
 
 			the_post_navigation(
 				array(
-					'prev_text' => esc_html__( 'Previous:', 'kenfrederick_2020' ) . ' %title',
-					'next_text' => esc_html__( 'Next:', 'kenfrederick_2020' ) . ' %title',
+					'prev_text' => esc_html__( 'Next:', 'kenfrederick_2020' ) . ' %title',
+					'next_text' => esc_html__( 'Previous:', 'kenfrederick_2020' ) . ' %title',
+
 				)
 			);
 
 			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			if ( comments_open() || get_comments_number() ) : ?>
+	<div class="content-container content">
+		<?php comments_template(); ?>
+	</div>
+	<?php endif;
 
 		endwhile; // End of the loop.
 		?>

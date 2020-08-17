@@ -2,6 +2,12 @@
 # Start my custom CSS
 --------------------------------------------------------------*/
 
+.content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .content-container {
   padding-top: 2.6em;
 }
@@ -162,15 +168,20 @@ figcaption {
   text-align: center;
 }
 
+.comments-link,
+.edit-link {
+  margin-left: 1em;
+}
+
 /*--------------------------------------------------------------
 	# Footer
 	--------------------------------------------------------------*/
 
-footer {
+.site-footer {
   padding: 1em 0.25em;
 }
 
-footer p {
+.site-footer p {
   font-size: 0.8em;
   text-align: center;
   padding-bottom: 0;
@@ -190,7 +201,7 @@ footer p {
 }
 
 @media only screen and (min-width: 600px) {
-  footer {
+  .site-footer {
     padding: 1em 1.75em;
   }
 
@@ -207,19 +218,8 @@ footer p {
   display: block;
 }
 
-.post,
-.page {
-  margin: 0 0 1.5em;
-}
-
 .updated:not(.published) {
   display: none;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0;
 }
 
 .page-links {

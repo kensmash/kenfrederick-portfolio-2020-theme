@@ -28,16 +28,23 @@ get_header();
 	<?php
 			endif;
 
+			$page = get_query_var('paged'); // get which page number we are on
+			$counter = 0;
+
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
-
+				$counter++; // add +1 to count for each post
 				/*
 				 * Include the Post-Type-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				if ($counter === 1 AND $paged <= 1) { 
+					get_template_part( 'template-parts/content' , get_post_type() ); 
+				} else { 
+					get_template_part( 'template-parts/content-excerpt' ); 
+				}
 
 			endwhile;
 
@@ -53,5 +60,5 @@ get_header();
 </main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();

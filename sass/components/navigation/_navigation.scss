@@ -8,7 +8,7 @@
   top: 0;
   bottom: 0;
   z-index: 100;
-  margin-top: 42px;
+  margin-top: 58px;
   background: rgb(255, 255, 255);
   /* https://stackoverflow.com/questions/17572619/inset-box-shadow-only-on-one-side */
   box-shadow: -2px 6px 10px 1px rgba(0, 0, 0, 0.2);
@@ -25,8 +25,13 @@
 
 @media only screen and (min-width: 600px) {
   .nav-container {
-    margin-top: 41px;
     width: 270px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .nav-container {
+    margin-top: 41px;
   }
 }
 
