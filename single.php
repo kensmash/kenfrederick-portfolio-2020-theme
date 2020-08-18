@@ -28,7 +28,8 @@ get_header();
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) : ?>
-	<div class="content-container content">
+	<div class="comments-container content">
+		<hr>
 		<?php comments_template(); ?>
 	</div>
 	<?php endif;

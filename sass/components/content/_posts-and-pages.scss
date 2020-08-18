@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 hr {
-  margin: 1.5em 0;
+  margin: 1em 0;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0);
@@ -20,7 +20,12 @@ hr {
 }
 
 .blog-container {
-  padding: 1em;
+  padding: 2.6em 1em 1em;
+}
+
+.excerpt-container,
+.comments-container {
+  padding: 0.25em 1em;
 }
 
 @media only screen and (min-width: 600px) {
