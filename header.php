@@ -51,4 +51,4 @@
 			</div>
 		</header> <!-- #masthead -->
 
-		<?php get_template_part( 'template-parts/nav', 'sidebar' ); ?>
+		<?php get_template_part( 'template-parts/nav', 'sidebar-webprint' ); ?>

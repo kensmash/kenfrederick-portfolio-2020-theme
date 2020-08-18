@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class("content-container content"); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -21,7 +21,7 @@
 		if ( 'post' === get_post_type() ) :
 			?>
 		<div class="entry-meta">
-			<?php kenfrederick_2020_posted_on();?>
+			<?php kenfrederick_2020_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->

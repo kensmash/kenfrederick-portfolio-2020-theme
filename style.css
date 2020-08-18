@@ -673,7 +673,7 @@ textarea {
   display: none;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 600px) {
   .title-desc {
     display: inherit;
     color: white;
@@ -1019,6 +1019,13 @@ textarea {
 /*--------------------------------------------------------------
 # Start my custom CSS
 --------------------------------------------------------------*/
+hr {
+  margin: 1.5em 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .content {
   width: 100%;
   max-width: 1000px;
@@ -1027,6 +1034,10 @@ textarea {
 
 .content-container {
   padding-top: 2.6em;
+}
+
+.blog-container {
+  padding: 1em;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1176,6 +1187,7 @@ figcaption {
 }
 
 .comments-link,
+.tags-links,
 .edit-link {
   margin-left: 1em;
 }

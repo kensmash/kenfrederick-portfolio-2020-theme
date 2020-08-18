@@ -15,17 +15,17 @@
 get_header();
 ?>
 
-<main id="primary" class="main-container">
-
-	<?php
+<main id="primary" class="main-container blog-container">
+	<div class="content-container content">
+		<?php
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) :
 				?>
-	<header>
-		<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-	</header>
-	<?php
+		<header>
+			<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+		</header>
+		<?php
 			endif;
 
 			$page = get_query_var('paged'); // get which page number we are on
@@ -46,6 +46,8 @@ get_header();
 					get_template_part( 'template-parts/content-excerpt' ); 
 				}
 
+				if ($wp_query->current_post +1 < $wp_query->post_count) { echo "<hr />"; } 
+
 			endwhile;
 
 			the_posts_navigation();
@@ -56,8 +58,8 @@ get_header();
 
 		endif;
 		?>
-
-</main><!-- #main -->
+	</div>
+</main>
 
 <?php
 

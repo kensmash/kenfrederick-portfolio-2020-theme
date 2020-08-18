@@ -9,10 +9,10 @@
 
 ?>
 
-<div id="post-<?php the_ID(); ?>" class="content-container content">
+<div id="post-<?php the_ID(); ?>">
 
     <h3><a href="<?php the_permalink();?>" rel="bookmark"><?php the_title(); ?></a></h3>
-    <p><?php kenfrederick_2020_posted_on();?></p>
+
     <?php the_excerpt(); ?>
 
 </div>
